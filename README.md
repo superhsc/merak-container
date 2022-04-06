@@ -14,3 +14,6 @@ Dokcer
 - [docker & git - CI/CD](/dokcer/11%20Git%20%E5%92%8C%20%E5%AE%B9%E5%99%A8%20%E2%80%94%E2%80%94%20CICD.md)
 - [容器安全](/dokcer/12%20%E5%AE%B9%E5%99%A8%E5%AE%89%E5%85%A8.md)
   
+
+DevOps 流水线落地笔记
+- [部署步骤](/notebook-k8s/README.md)
