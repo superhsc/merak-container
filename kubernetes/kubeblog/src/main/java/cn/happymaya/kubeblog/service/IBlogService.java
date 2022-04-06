@@ -1,0 +1,36 @@
+package cn.happymaya.kubeblog.service;
+
+import cn.happymaya.kubeblog.po.Blog;
+import cn.happymaya.kubeblog.vo.BlogQueryVO;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
+import java.util.List;
+import java.util.Map;
+
+public interface IBlogService {
+
+    Blog getBlog(Long id);
+
+    Blog getAndConvert(Long id);
+
+    Page<Blog> listBlog(Pageable pageable, BlogQueryVO blog);
+
+    Page<Blog> listBlog(Pageable pageable);
+
+    Page<Blog> listBlog(Long tagId, Pageable pageable);
+
+    Page<Blog> listBlog(String query, Pageable pageable);
+
+    List<Blog> listRecommendBlogTop(Integer size);
+
+    Map<String, List<Blog>> archiveBlog();
+
+    Long countBlog();
+
+    Blog saveBlog(Blog blog);
+
+    Blog updateBlog(Long id, Blog blog);
+
+    void deleteBlog(Long id);
+}
